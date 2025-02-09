@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const errorMessage = document.getElementById("error-message");
     
     // Set countdown date to 02/26/2025
-    const countdownDate = new Date("February 26, 2025 00:00:00").getTime();
+    const countdownDate = new Date("February 09, 2025 00:00:00").getTime();
     
     const countdownInterval = setInterval(function () {
         const now = new Date().getTime();
