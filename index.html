@@ -3,41 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy 18th Birthday, Fatima Ezzahra!</title>
+    <title>Fatima Ezzahra's Surprise</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div id="countdown"></div>
+    <div class="romantic-container">
+        <div id="countdown-container">
+            <h1>💖 A Special Surprise for You, Fatima Ezzahra 💖</h1>
+            <p>Countdown to your 18th birthday:</p>
+            <div id="countdown"></div>
+        </div>
+        <div id="question-container" class="hidden">
+            <h2>Verify Your Identity</h2>
+            <p>Answer these questions to unlock your special surprise!</p>
+            <form id="security-form">
+                <label for="food">What is your favorite food?</label>
+                <input type="text" id="food" required placeholder="e.g. Lasagna">
+                
+                <label for="job">What is your dream job? (If you don’t have one, type "I don't have one")</label>
+                <input type="text" id="job" required placeholder="e.g. I don't have one">
+                
+                <label for="movie">What is your favorite movie or TV show?</label>
+                <input type="text" id="movie" required placeholder="e.g. Love at First Sight">
+                
+                <label for="fear">What is your biggest fear?</label>
+                <input type="text" id="fear" required placeholder="e.g. Hacharat">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="message-container" class="hidden">
+            <h2>Congratulations, Fatima Ezzahra! 🎉</h2>
+            <p>You have successfully answered all the questions! Your surprise is waiting for you. You can now claim your special gift 💍 from your love. ❤️</p>
+        </div>
     </div>
-
-    <div id="auth-section" class="hidden">
-        <h1>Happy Birthday, Fatima Ezzahra! 🎉</h1>
-        <h2>Answer these to unlock your surprise!</h2>
-        <form id="auth-form">
-            <label>Favorite food:</label>
-            <input type="text" id="q1" required>
-            
-            <label>Dream job:</label>
-            <input type="text" id="q2" required>
-            
-            <label>Favorite movie/TV show:</label>
-            <input type="text" id="q3" required>
-            
-            <label>Biggest fear:</label>
-            <input type="text" id="q4" required>
-            
-            <button type="submit">Unlock</button>
-        </form>
-        <p id="error-message" class="hidden">Incorrect answers! Try again.</p>
-    </div>
-
-    <div id="surprise-section" class="hidden">
-        <h2>Congratulations, Fatima Ezzahra! 🎉</h2>
-        <p>My love, you have unlocked your special gift! ❤️</p>
-        <p>You can now claim your <strong>ring</strong> from me in person! 💍</p>
-        <p>Happy 18th birthday, my love! I love you! 😘</p>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
