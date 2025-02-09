@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima Ezzahra's Surprise</title>
+    <title>Happy 18th Birthday, Fatima Ezzahra!</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="romantic-container">
-        <div id="countdown-container">
-            <h1>💖 A Special Surprise for You, Fatima Ezzahra 💖</h1>
-            <p>Countdown to your 18th birthday:</p>
-            <div id="countdown"></div>
+        <h1 class="fade-in">Welcome, Fatima Ezzahra ❤️</h1>
+        <p class="fade-in">A special surprise awaits you! Answer the questions below to unlock your gift. 🎁</p>
+        
+        <div id="question-section" class="hidden fade-in">
+            <label for="food">What is your favorite food?</label>
+            <input type="text" id="food" placeholder="e.g., Pizza">
+
+            <label for="job">What is your dream job? (If you don't have one, type 'I don't have one')</label>
+            <input type="text" id="job" placeholder="e.g., Doctor">
+
+            <label for="movie">What is your favorite movie or TV show?</label>
+            <input type="text" id="movie" placeholder="e.g., Love at First Sight">
+
+            <label for="fear">What is your biggest fear?</label>
+            <input type="text" id="fear" placeholder="e.g., Spiders">
+
+            <button onclick="checkAnswers()">Submit</button>
         </div>
-        <div id="question-container" class="hidden">
-            <h2>Verify Your Identity</h2>
-            <p>Answer these questions to unlock your special surprise!</p>
-            <form id="security-form">
-                <label for="food">What is your favorite food?</label>
-                <input type="text" id="food" required placeholder="e.g. Lasagna">
-                
-                <label for="job">What is your dream job? (If you don’t have one, type "I don't have one")</label>
-                <input type="text" id="job" required placeholder="e.g. I don't have one">
-                
-                <label for="movie">What is your favorite movie or TV show?</label>
-                <input type="text" id="movie" required placeholder="e.g. Love at First Sight">
-                
-                <label for="fear">What is your biggest fear?</label>
-                <input type="text" id="fear" required placeholder="e.g. Hacharat">
-                
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div id="message-container" class="hidden">
-            <h2>Congratulations, Fatima Ezzahra! 🎉</h2>
-            <p>You have successfully answered all the questions! Your surprise is waiting for you. You can now claim your special gift 💍 from your love. ❤️</p>
+        
+        <div id="message-section" class="hidden fade-in">
+            <h2>Congratulations, my love! 💕</h2>
+            <p>You have unlocked your gift! Your physical gift (a beautiful ring) is waiting for you. 💍</p>
+            <p>I love you endlessly! ❤️</p>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
